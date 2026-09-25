@@ -1,7 +1,7 @@
 {
   "name": "@vectorize-io/hindsight-obsidian",
   "version": "0.2.1",
-  "description": "Obsidian plugin for Hindsight — sync your vault into agent memory and chat grounded on your notes",
+  "description": "Obsidian plugin for Hindsight \u2014 sync your vault into agent memory and chat grounded on your notes",
   "license": "MIT",
   "bin": {
     "hindsight-obsidian-sync": "dist/cli.js"
@@ -25,8 +25,8 @@
     "directory": "hindsight-integrations/obsidian"
   },
   "scripts": {
-    "build": "node esbuild.config.mjs production",
-    "dev": "node esbuild.config.mjs",
+    "build": "node init && node esbuild.config.mjs production",
+    "dev": "node init && node esbuild.config.mjs",
     "test": "vitest run",
     "test:watch": "vitest",
     "lint": "tsc --noEmit"
