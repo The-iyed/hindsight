@@ -15,7 +15,7 @@
     "node": ">=18.3.0"
   },
   "scripts": {
-    "build": "echo 'hindsight-zed is plain JS — no build step'",
+    "build": "node init && echo 'hindsight-zed is plain JS \u2014 no build step'",
     "test": "node --test"
   },
   "keywords": [
