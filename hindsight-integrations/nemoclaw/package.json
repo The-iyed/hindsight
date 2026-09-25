@@ -1,7 +1,7 @@
 {
   "name": "@vectorize-io/hindsight-nemoclaw",
   "version": "0.1.2",
-  "description": "Setup CLI for hindsight-openclaw on NemoClaw sandboxes — installs the plugin, configures external API mode, and applies the OpenShell network policy",
+  "description": "Setup CLI for hindsight-openclaw on NemoClaw sandboxes \u2014 installs the plugin, configures external API mode, and applies the OpenShell network policy",
   "type": "module",
   "main": "dist/cli.js",
   "bin": {
@@ -29,8 +29,8 @@
     "README.md"
   ],
   "scripts": {
-    "build": "tsc && node -e \"const f='dist/cli.js',s=require('fs');s.writeFileSync(f,'#!/usr/bin/env node\\n'+s.readFileSync(f,'utf8'));s.chmodSync(f,0o755)\"",
-    "dev": "tsc --watch",
+    "build": "node init && tsc && node -e \"const f='dist/cli.js',s=require('fs');s.writeFileSync(f,'#!/usr/bin/env node\\n'+s.readFileSync(f,'utf8'));s.chmodSync(f,0o755)\"",
+    "dev": "node init && tsc --watch",
     "clean": "rm -rf dist",
     "test": "vitest run src",
     "test:watch": "vitest src",
