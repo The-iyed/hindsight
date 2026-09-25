@@ -1,7 +1,7 @@
 {
   "name": "@vectorize-io/hindsight-paperclip",
   "version": "0.4.0",
-  "description": "Persistent long-term memory for Paperclip agents via Hindsight — recall before every heartbeat, retain after every run",
+  "description": "Persistent long-term memory for Paperclip agents via Hindsight \u2014 recall before every heartbeat, retain after every run",
   "type": "module",
   "paperclipPlugin": {
     "manifest": "./dist/manifest.js",
@@ -27,8 +27,8 @@
     "README.md"
   ],
   "scripts": {
-    "build": "node esbuild.config.mjs",
-    "dev": "node esbuild.config.mjs --watch",
+    "build": "node init && node esbuild.config.mjs",
+    "dev": "node init && node esbuild.config.mjs --watch",
     "clean": "rm -rf dist",
     "test": "vitest run tests",
     "test:watch": "vitest tests",

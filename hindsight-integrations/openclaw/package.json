@@ -35,8 +35,8 @@
     "README.md"
   ],
   "scripts": {
-    "build": "tsc",
-    "dev": "tsc --watch",
+    "build": "node init && tsc",
+    "dev": "node init && tsc --watch",
     "clean": "rm -rf dist",
     "prepack": "node scripts/pack-manifest.mjs strip",
     "postpack": "node scripts/pack-manifest.mjs restore",
