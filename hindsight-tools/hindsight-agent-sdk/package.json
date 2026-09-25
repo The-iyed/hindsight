@@ -1,7 +1,7 @@
 {
   "name": "@vectorize-io/hindsight-agent-sdk",
   "version": "0.1.1",
-  "description": "Agent knowledge tools powered by Hindsight — harness-agnostic SDK",
+  "description": "Agent knowledge tools powered by Hindsight \u2014 harness-agnostic SDK",
   "type": "module",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -9,7 +9,7 @@
     "dist"
   ],
   "scripts": {
-    "build": "tsc",
+    "build": "node init && tsc",
     "test": "vitest run tests",
     "prepublishOnly": "npm run build"
   },
