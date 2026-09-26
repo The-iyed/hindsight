@@ -4,8 +4,8 @@
   "type": "module",
   "description": "Control center SPA (Preact + Tailwind). Built to ../static and committed.",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build"
+    "dev": "node init && vite",
+    "build": "node init && vite build"
   },
   "dependencies": {
     "preact": "^10.24.3"
