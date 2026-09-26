@@ -14,7 +14,7 @@
     "directory": "hindsight-integrations/flowise"
   },
   "scripts": {
-    "build": "tsc --noEmit",
+    "build": "node init && tsc --noEmit",
     "test": "vitest run",
     "test:watch": "vitest",
     "lint": "tsc --noEmit"
